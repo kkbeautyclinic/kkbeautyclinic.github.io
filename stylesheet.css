@@ -146,3 +146,10 @@ header {
 	display: flex;
 	justify-content: space-between;
 }
+
+footer {
+	font-size: 10pt;
+	text-align: center;
+	margin-top: 60px;
+	margin-bottom: 30px;
+}
