@@ -75,10 +75,26 @@ header {
 
 #about {
 	text-align: center;
-	margin: 30px 0;
+	margin: 60px 0;
 }
 
 #about h1 {
 	font-weight: bold;
 	padding-bottom: 15px;
+}
+
+#services {
+	margin: 60px 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+.service {
+	font-size: 12pt;
+	text-align: center;
+}
+
+.service img {
+	display: block;
+	padding-bottom: 5px;
 }
