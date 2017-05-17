@@ -55,11 +55,15 @@ body {
 	background-color: #74468c;
 	color: #fafafa;
 	font-family: "Muli", sans-serif;
-	font-size: 16pt;
+	font-size: 12pt;
 }
 
 h1 {
-	font-size: 22pt;
+	font-size: 20pt;
+}
+
+h2 {
+	font-size: 16pt;
 }
 
 .container {
@@ -76,6 +80,7 @@ header {
 #about {
 	text-align: center;
 	margin: 60px 0;
+	font-size: 16pt
 }
 
 #about h1 {
@@ -101,4 +106,43 @@ header {
 
 #map-canvas {
 	height: 400px;
+}
+
+#information {
+	display: flex;
+	justify-content: space-between;
+	margin: 60px 0;
+}
+
+#information div {
+	min-width: 25%;
+}
+
+#information .center {
+	text-align: center;
+}
+
+#information h2 {
+	margin-bottom: 15px;
+	text-align: center;
+}
+
+#information a {
+	text-decoration: none;
+	color: inherit;
+	display: block;
+}
+
+#information i {
+	width: 25px;
+	text-align: center;
+}
+
+#information a, #information p, .opening-time {
+	margin: 10px;
+}
+
+.opening-time {
+	display: flex;
+	justify-content: space-between;
 }
