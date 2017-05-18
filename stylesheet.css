@@ -59,11 +59,11 @@ body {
 }
 
 h1 {
-	font-size: 20pt;
+	font-size: 18pt;
 }
 
 h2 {
-	font-size: 16pt;
+	font-size: 14pt;
 }
 
 .container {
@@ -74,12 +74,17 @@ h2 {
 
 header {
 	text-align: center;
-	margin: 30px 0;
+	padding: 30px 0;
+	border-bottom: 3px solid #fafafa;
+}
+
+#logo {
+	width: 40%;
 }
 
 #about {
 	text-align: center;
-	margin: 60px 0;
+	margin: 30px 0;
 	font-size: 16pt
 }
 
@@ -95,7 +100,6 @@ header {
 }
 
 .service {
-	font-size: 12pt;
 	text-align: center;
 }
 
@@ -138,7 +142,9 @@ header {
 	text-align: center;
 }
 
-#information a, #information p, .opening-time {
+#information a,
+#information p,
+.opening-time {
 	margin: 10px;
 }
 
@@ -151,5 +157,49 @@ footer {
 	font-size: 10pt;
 	text-align: center;
 	margin-top: 60px;
-	margin-bottom: 30px;
+	margin-bottom: 10px;
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px) {
+	body {
+		color: red;
+	}
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+	body {
+		color: orange;
+		font-size: 10pt;
+	}
+	.container {
+		width: 720px;
+	}
+	h1 {
+		font-size: 16pt;
+	}
+	h2 {
+		font-size: 12pt;
+	}
+	.service img {
+		width: 120px;
+	}
+	footer {
+		font-size: 8pt;
+	}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+	body {
+		color: yellow;
+	}
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+	body {
+		color: green;
+	}
 }
