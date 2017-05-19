@@ -51,11 +51,22 @@ table {
 
 /* SITE */
 
+html {
+  height: 100%;
+}
+
 body {
 	background-color: #74468c;
 	color: #fafafa;
 	font-family: "Muli", sans-serif;
 	font-size: 12pt;
+	min-height: 100%;
+  	display: flex;
+  	flex-direction: column;
+}
+
+.content {
+  flex: 1;
 }
 
 h1 {
@@ -64,22 +75,25 @@ h1 {
 
 h2 {
 	font-size: 14pt;
+	font-weight: bold;
 }
 
 .container {
-	width: 960px;
-	padding: 0 10px;
+	width: 80%;
+	max-width: 960px;
 	margin: 0 auto;
+
 }
 
 header {
 	text-align: center;
 	padding: 30px 0;
-	border-bottom: 3px solid #fafafa;
+	border-bottom: 2px solid #fafafa;
 }
 
 #logo {
 	width: 40%;
+	min-width: 180px;
 }
 
 #about {
@@ -101,11 +115,18 @@ header {
 
 .service {
 	text-align: center;
+	max-width: 150px;
+	margin-right: 10px;
+}
+
+.service:last-child {
+	margin-right: 0;
 }
 
 .service img {
 	display: block;
 	padding-bottom: 5px;
+	width:100%;
 }
 
 #map-canvas {
@@ -145,7 +166,7 @@ header {
 #information a,
 #information p,
 .opening-time {
-	margin: 10px;
+	margin: 10px 0;
 }
 
 .opening-time {
@@ -156,50 +177,76 @@ header {
 footer {
 	font-size: 10pt;
 	text-align: center;
-	margin-top: 60px;
 	margin-bottom: 10px;
 }
 
-/* Large Devices, Wide Screens */
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 780px) {
 	body {
-		color: red;
-	}
-}
-
-/* Medium Devices, Desktops */
-@media only screen and (max-width: 992px) {
-	body {
-		color: orange;
 		font-size: 10pt;
 	}
-	.container {
-		width: 720px;
-	}
+
 	h1 {
 		font-size: 16pt;
 	}
+
 	h2 {
 		font-size: 12pt;
 	}
-	.service img {
-		width: 120px;
+
+	#about {
+		font-size: 12pt
 	}
+
 	footer {
 		font-size: 8pt;
 	}
-}
 
-/* Small Devices, Tablets */
-@media only screen and (max-width: 768px) {
-	body {
-		color: yellow;
+	#services, #information {
+		margin: 30px 0;
 	}
 }
 
-/* Extra Small Devices, Phones */
-@media only screen and (max-width: 480px) {
-	body {
-		color: green;
+@media only screen and (max-width: 640px) {
+	#information {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	#information div {
+		margin: 15px 0;
+	}
+
+	.opening-time {
+		justify-content: center;
+	}
+
+	.opening-time span {
+		width: 80px;
+	}
+
+	.opening-time span:first-child {
+		text-align: left;
+	}
+
+	.opening-time span:last-child {
+		text-align: right;
+	}
+}
+
+@media only screen and (max-width: 560px) {
+	#services{
+		display: none;
+	}
+
+	h1 {
+		font-size: 14pt;
+	}
+
+	#about {
+		font-size: 10pt
+	}
+
+	#information div {
+		margin: 10px 0;
 	}
 }
